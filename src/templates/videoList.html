@@ -1,7 +1,8 @@
 <ul class="video-list">
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
+  <!-- <video-list-entry video="$ctrl.videos[0]"><h5><em>Video list entry</em> component goes here</h5></video-list-entry>
+  <video-list-entry video="$ctrl.videos[1]"><h5><em>Video list entry</em> component goes here</h5></video-list-entry>
+  <video-list-entry video="$ctrl.videos[2]"><h5><em>Video list entry</em> component goes here</h5></video-list-entry> -->
+  <video-list-entry
+    ng-repeat="video in $ctrl.videos"
+    video="video"></video-list-entry>
 </ul>
