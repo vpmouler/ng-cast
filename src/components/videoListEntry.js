@@ -2,12 +2,20 @@ angular.module('video-player')
 .component('videoListEntry', {
 
   bindings: {
-    video: '<'
+    video: '<',
+    videoOnClick: '<'
   },
 
   controller:  function () {
-    setTimeout(()=> {console.log('video entry video', this)},500);
+
+    // var stringConcat = function () {
+    //   console.log('lksadjflksdajf')
+    //   return 'https://www.youtube.com/embed/' + this.video.id.videoId;
+    // }
+
   },
+
+
 
   templateUrl: 'src/templates/videoListEntry.html'
 });
