@@ -3,7 +3,8 @@
   <video-list-entry video="$ctrl.videos[1]"><h5><em>Video list entry</em> component goes here</h5></video-list-entry>
   <video-list-entry video="$ctrl.videos[2]"><h5><em>Video list entry</em> component goes here</h5></video-list-entry> -->
   <video-list-entry
-    ng-repeat="video in $ctrl.videos"
-    videoOnClick="$ctrl.videoOnClick(index)"
+    ng-repeat="video in $ctrl.videos track by $index"
+    video-on-click="$ctrl.videoOnClick"
+    index="$index"
     video="video"></video-list-entry>
 </ul>

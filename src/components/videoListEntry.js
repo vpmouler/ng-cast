@@ -3,10 +3,16 @@ angular.module('video-player')
 
   bindings: {
     video: '<',
-    videoOnClick: '<'
+    videoOnClick: '<',
+    index: '<',
   },
 
   controller:  function () {
+
+    this.logIndex = (video, event)=>{
+      console.log('vide',video);
+      console.log('event', event);
+    }
 
     // var stringConcat = function () {
     //   console.log('lksadjflksdajf')
